@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import LogginSuccesfull from './pages/LogginSuccesfull';
 import Ooops from './pages/Ooops';
 import Quiz from './pages/Quiz';
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {path:"/",element:<Entry/>,children:[
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
   {path:"/quiz",element:<Quiz/>}
 ])
 function App() {
+
   return (
     <RouterProvider router={router}>
     

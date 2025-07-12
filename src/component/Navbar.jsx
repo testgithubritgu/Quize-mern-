@@ -22,8 +22,8 @@ const Navbar = () => {
     
             localStorage.removeItem("token")
             localStorage.removeItem("user")
-            window.location.reload()
             navigator("/")
+            window.location.reload()
             
         
     }

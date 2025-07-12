@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 // import roboto from "../assets/images/robot.jpg"
 const HomePage = () => {
@@ -8,6 +8,9 @@ const HomePage = () => {
   const getquze = ()=>{
     !checkuser? navigator("/errorPage"):navigator("/quiz")
   }
+  useEffect(()=>{
+    setcheckuser(token?true:false)
+  })
   return (
     <>
     <div className='h-full text-center  flex justify-center items-center '>
